@@ -1,0 +1,29 @@
+{
+  "offers": [
+    {"service": "Приём терапевта", "price": 5500, "clinic": "Клиника Сункар", "city": "Алматы", "url": "https://doq.kz/sunkar"},
+    {"service": "Приём кардиолога", "price": 7500, "clinic": "Клиника Сункар", "city": "Алматы", "url": "https://doq.kz/sunkar"},
+    {"service": "Приём невролога", "price": 7000, "clinic": "Клиника Сункар", "city": "Алматы", "url": "https://doq.kz/sunkar"},
+    {"service": "Приём эндокринолога", "price": 7200, "clinic": "Клиника Сункар", "city": "Алматы", "url": "https://doq.kz/sunkar"},
+    {"service": "Приём гинеколога", "price": 6800, "clinic": "Клиника Сункар", "city": "Алматы", "url": "https://doq.kz/sunkar"},
+    {"service": "Приём дерматолога", "price": 6500, "clinic": "Клиника Сункар", "city": "Алматы", "url": "https://doq.kz/sunkar"},
+    {"service": "УЗИ брюшной полости", "price": 7500, "clinic": "Клиника Сункар", "city": "Алматы", "url": "https://doq.kz/sunkar"},
+    {"service": "ЭхоКГ", "price": 9500, "clinic": "Клиника Сункар", "city": "Алматы", "url": "https://doq.kz/sunkar"},
+    {"service": "МРТ головного мозга", "price": 28000, "clinic": "Клиника Сункар", "city": "Алматы", "url": "https://doq.kz/sunkar"},
+    {"service": "КТ грудной клетки", "price": 22000, "clinic": "Клиника Сункар", "city": "Алматы", "url": "https://doq.kz/sunkar"},
+    {"service": "Приём терапевта", "price": 5800, "clinic": "Медикер", "city": "Астана", "url": "https://doq.kz/mediker"},
+    {"service": "Приём кардиолога", "price": 7800, "clinic": "Медикер", "city": "Астана", "url": "https://doq.kz/mediker"},
+    {"service": "Приём невролога", "price": 7300, "clinic": "Медикер", "city": "Астана", "url": "https://doq.kz/mediker"},
+    {"service": "Приём офтальмолога", "price": 6600, "clinic": "Медикер", "city": "Астана", "url": "https://doq.kz/mediker"},
+    {"service": "Приём гастроэнтеролога", "price": 7100, "clinic": "Медикер", "city": "Астана", "url": "https://doq.kz/mediker"},
+    {"service": "УЗИ щитовидной железы", "price": 5300, "clinic": "Медикер", "city": "Астана", "url": "https://doq.kz/mediker"},
+    {"service": "МРТ позвоночника", "price": 25000, "clinic": "Медикер", "city": "Астана", "url": "https://doq.kz/mediker"},
+    {"service": "Гастроскопия (ФГДС)", "price": 13000, "clinic": "Медикер", "city": "Астана", "url": "https://doq.kz/mediker"},
+    {"service": "Колоноскопия", "price": 30000, "clinic": "Медикер", "city": "Астана", "url": "https://doq.kz/mediker"},
+    {"service": "Приём терапевта", "price": 3500, "clinic": "Городская поликлиника №3", "city": "Павлодар", "url": "https://doq.kz/pvl3"},
+    {"service": "Приём педиатра", "price": 3200, "clinic": "Городская поликлиника №3", "city": "Павлодар", "url": "https://doq.kz/pvl3"},
+    {"service": "ЭКГ", "price": 2000, "clinic": "Городская поликлиника №3", "city": "Павлодар", "url": "https://doq.kz/pvl3"},
+    {"service": "Флюорография", "price": 1800, "clinic": "Городская поликлиника №3", "city": "Павлодар", "url": "https://doq.kz/pvl3"},
+    {"service": "Общий анализ крови", "price": 1900, "clinic": "Городская поликлиника №3", "city": "Павлодар", "url": "https://doq.kz/pvl3"},
+    {"service": "Загадочная услуга XYZ-123", "price": 9999, "clinic": "Городская поликлиника №3", "city": "Павлодар", "url": "https://doq.kz/pvl3"}
+  ]
+}

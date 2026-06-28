@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #f4f7fb;
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    background: var(--bg);
+    color: #20262e;
+    letter-spacing: -0.01em;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    letter-spacing: -0.02em;
+  }
+
+  ::selection {
+    background: rgba(31, 175, 193, 0.18);
+  }
+}
+
+@layer components {
+  /* Shared surface card per design DNA: white, soft border, big soft shadow */
+  .card {
+    @apply rounded-2xl border border-line bg-surface shadow-card;
+  }
+
+  .btn {
+    @apply inline-flex h-11 items-center justify-center gap-2 rounded-xl px-5 text-sm font-semibold transition-all duration-200;
+  }
+
+  .btn-primary {
+    @apply btn bg-navy text-white shadow-cta hover:bg-navy-700;
+  }
+
+  .btn-secondary {
+    @apply btn bg-brand-500 text-white hover:bg-brand-600;
+  }
+
+  .btn-ghost {
+    @apply btn border border-line bg-surface text-ink hover:border-brand-300 hover:text-brand-700;
+  }
+
+  .field {
+    @apply h-12 rounded-xl border border-line bg-surface px-4 text-ink placeholder:text-ink-muted outline-none transition focus:border-brand-500 focus:shadow-focus;
+  }
+
+  .badge {
+    @apply inline-flex items-center rounded-full px-3 py-1 text-xs font-medium;
+  }
+}
+
+/* Leaflet marker fix when bundling */
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+  border-radius: 18px;
+  z-index: 0;
+}

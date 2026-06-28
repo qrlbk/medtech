@@ -1,0 +1,37 @@
+# Local virtualenvs (NEVER ship these into the image — huge & host-specific)
+.venv/
+venv/
+env/
+ENV/
+
+# Python caches & build artifacts
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# Tooling caches
+.ruff_cache/
+.pytest_cache/
+.mypy_cache/
+.cache/
+
+# Local env & secrets
+.env
+.env.*
+!.env.example
+
+# VCS / editor
+.git/
+.gitignore
+.idea/
+.vscode/
+
+# OS junk
+.DS_Store
+
+# Logs & local data dumps
+*.log
+data/raw/

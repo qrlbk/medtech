@@ -1,0 +1,131 @@
+name: medserviceprice
+
+services:
+  postgres:
+    build:
+      context: ./postgres
+    image: medprice-postgres:16
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-medprice}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-medprice}
+      POSTGRES_DB: ${POSTGRES_DB:-medprice}
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./postgres/init:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-medprice}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  meilisearch:
+    image: getmeili/meilisearch:v1.11
+    environment:
+      MEILI_MASTER_KEY: ${MEILI_MASTER_KEY:-masterKey_change_me}
+      MEILI_ENV: development
+    ports:
+      - "7700:7700"
+    volumes:
+      - meilidata:/meili_data
+
+  backend:
+    build:
+      context: ../backend
+    env_file:
+      - ../.env
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      meilisearch:
+        condition: service_started
+    ports:
+      - "8000:8000"
+    volumes:
+      - ../backend:/app
+
+  prefect:
+    build:
+      context: ../backend
+    command: prefect server start --host 0.0.0.0
+    env_file:
+      - ../.env
+    environment:
+      PREFECT_SERVER_API_HOST: 0.0.0.0
+    ports:
+      - "4200:4200"
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  worker:
+    build:
+      context: ../backend
+    command: python -m pipelines.worker
+    env_file:
+      - ../.env
+    depends_on:
+      backend:
+        condition: service_started
+    volumes:
+      - ../backend:/app
+
+  telegram-bot:
+    build:
+      context: ../backend
+    command: python -m app.integrations.telegram
+    env_file:
+      - ../.env
+    depends_on:
+      backend:
+        condition: service_started
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ../frontend
+    environment:
+      NEXT_PUBLIC_API_BASE: http://localhost:8000/api/v1
+    ports:
+      - "3000:3000"
+    depends_on:
+      backend:
+        condition: service_started
+
+  prometheus:
+    image: prom/prometheus:v3.0.1
+    volumes:
+      - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+    ports:
+      - "9090:9090"
+
+  grafana:
+    image: grafana/grafana:11.4.0
+    environment:
+      GF_SECURITY_ADMIN_USER: admin
+      GF_SECURITY_ADMIN_PASSWORD: admin
+    volumes:
+      - ./grafana/provisioning:/etc/grafana/provisioning:ro
+      - grafanadata:/var/lib/grafana
+    ports:
+      - "3001:3000"
+    depends_on:
+      - prometheus
+
+volumes:
+  pgdata:
+  meilidata:
+  grafanadata:

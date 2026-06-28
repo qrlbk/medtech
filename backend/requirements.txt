@@ -1,0 +1,63 @@
+# --- Web / API ---
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+pydantic==2.10.4
+pydantic-settings==2.7.1
+python-multipart==0.0.20
+
+# --- Auth ---
+passlib[bcrypt]==1.7.4
+bcrypt==4.0.1
+python-jose[cryptography]==3.3.0
+email-validator==2.2.0
+
+# --- DB ---
+sqlalchemy==2.0.36
+alembic==1.14.0
+psycopg[binary]==3.2.3
+pgvector==0.3.6
+geoalchemy2==0.16.0
+
+# --- Cache / queue ---
+redis==5.2.1
+
+# --- Search ---
+meilisearch==0.33.0
+
+# --- Orchestration ---
+prefect==3.1.11
+# Prefect 3.x imports importlib_metadata but does not always pin it; declare explicitly.
+importlib-metadata==8.5.0
+
+# --- Parsing ---
+requests==2.32.3
+beautifulsoup4==4.12.3
+lxml==5.3.0
+playwright==1.49.1
+pdfplumber==0.11.4       # PDF price lists
+python-docx==1.1.2       # DOCX price lists
+openpyxl==3.1.5          # XLSX price lists + official catalog import
+xlrd==2.0.1              # legacy .xls price lists
+
+# --- Normalization ---
+# Lexical/fuzzy matching is always available. Semantic matching via embeddings
+# is OPTIONAL and lives in requirements-ml.txt (pulls torch, ~1GB). The app
+# degrades gracefully to lexical+fuzzy when the ML stack is absent.
+rapidfuzz==3.11.0
+numpy==2.2.1
+# OpenAI client for the optional LLM selector (final normalization stage).
+# Lightweight (no torch); enabled via LLM_ENABLED + OPENAI_API_KEY.
+openai==2.44.0
+
+# --- Observability ---
+prometheus-client==0.21.1
+structlog==24.4.0
+
+# --- Misc ---
+httpx==0.28.1
+tenacity==9.0.0
+
+# --- Dev / test ---
+pytest==8.3.4
+pytest-asyncio==0.25.0
+ruff==0.8.6

@@ -1,0 +1,182 @@
+[
+  {"name": "Общий анализ крови (ОАК)", "category": "laboratory", "synonyms": [
+    {"alias": "ОАК", "lang": "ru"}, {"alias": "Общий анализ крови", "lang": "ru"},
+    {"alias": "Общий анализ крови с лейкоформулой", "lang": "ru"},
+    {"alias": "Клинический анализ крови", "lang": "ru"},
+    {"alias": "CBC", "lang": "en"}, {"alias": "Complete blood count", "lang": "en"},
+    {"alias": "Қанның жалпы анализі", "lang": "kk"}]},
+  {"name": "Общий анализ мочи (ОАМ)", "category": "laboratory", "synonyms": [
+    {"alias": "ОАМ", "lang": "ru"}, {"alias": "Общий анализ мочи", "lang": "ru"},
+    {"alias": "Urinalysis", "lang": "en"}, {"alias": "Зәрдің жалпы анализі", "lang": "kk"}]},
+  {"name": "Глюкоза в крови", "category": "laboratory", "synonyms": [
+    {"alias": "Глюкоза", "lang": "ru"}, {"alias": "Сахар крови", "lang": "ru"},
+    {"alias": "Glucose", "lang": "en"}]},
+  {"name": "Глюкозотолерантный тест", "category": "laboratory", "synonyms": [
+    {"alias": "ГТТ", "lang": "ru"}, {"alias": "Тест на толерантность к глюкозе", "lang": "ru"},
+    {"alias": "OGTT", "lang": "en"}]},
+  {"name": "Гликированный гемоглобин (HbA1c)", "category": "laboratory", "synonyms": [
+    {"alias": "HbA1c", "lang": "en"}, {"alias": "Гликозилированный гемоглобин", "lang": "ru"}]},
+  {"name": "Биохимический анализ крови", "category": "laboratory", "synonyms": [
+    {"alias": "Биохимия крови", "lang": "ru"}, {"alias": "Биохимический анализ крови (расширенный)", "lang": "ru"},
+    {"alias": "Biochemistry panel", "lang": "en"}]},
+  {"name": "Липидограмма", "category": "laboratory", "synonyms": [
+    {"alias": "Липидный профиль", "lang": "ru"}, {"alias": "Холестерин общий", "lang": "ru"},
+    {"alias": "Lipid panel", "lang": "en"}]},
+  {"name": "Печёночные пробы", "category": "laboratory", "synonyms": [
+    {"alias": "АЛТ", "lang": "ru"}, {"alias": "АСТ", "lang": "ru"},
+    {"alias": "Печеночный комплекс", "lang": "ru"}, {"alias": "Liver function tests", "lang": "en"}]},
+  {"name": "Креатинин", "category": "laboratory", "synonyms": [
+    {"alias": "Creatinine", "lang": "en"}]},
+  {"name": "Мочевина", "category": "laboratory", "synonyms": [
+    {"alias": "Urea", "lang": "en"}]},
+  {"name": "Гормон ТТГ", "category": "laboratory", "synonyms": [
+    {"alias": "ТТГ", "lang": "ru"}, {"alias": "Тиреотропный гормон", "lang": "ru"},
+    {"alias": "TSH", "lang": "en"}]},
+  {"name": "Свободный тироксин (Т4)", "category": "laboratory", "synonyms": [
+    {"alias": "Т4 свободный", "lang": "ru"}, {"alias": "Free T4", "lang": "en"}]},
+  {"name": "Трийодтиронин (Т3)", "category": "laboratory", "synonyms": [
+    {"alias": "Т3 свободный", "lang": "ru"}, {"alias": "Free T3", "lang": "en"}]},
+  {"name": "Витамин D (25-OH)", "category": "laboratory", "synonyms": [
+    {"alias": "Витамин Д", "lang": "ru"}, {"alias": "25-OH витамин D", "lang": "ru"},
+    {"alias": "Vitamin D", "lang": "en"}]},
+  {"name": "Витамин B12", "category": "laboratory", "synonyms": [
+    {"alias": "Цианокобаламин", "lang": "ru"}, {"alias": "B12", "lang": "en"}]},
+  {"name": "Ферритин", "category": "laboratory", "synonyms": [
+    {"alias": "Ferritin", "lang": "en"}]},
+  {"name": "Сывороточное железо", "category": "laboratory", "synonyms": [
+    {"alias": "Железо", "lang": "ru"}, {"alias": "Iron", "lang": "en"}]},
+  {"name": "С-реактивный белок (СРБ)", "category": "laboratory", "synonyms": [
+    {"alias": "СРБ", "lang": "ru"}, {"alias": "CRP", "lang": "en"},
+    {"alias": "C-reactive protein", "lang": "en"}]},
+  {"name": "Ревматоидный фактор", "category": "laboratory", "synonyms": [
+    {"alias": "РФ", "lang": "ru"}, {"alias": "Rheumatoid factor", "lang": "en"}]},
+  {"name": "Коагулограмма", "category": "laboratory", "synonyms": [
+    {"alias": "Гемостазиограмма", "lang": "ru"}, {"alias": "Свёртываемость крови", "lang": "ru"},
+    {"alias": "Coagulation panel", "lang": "en"}]},
+  {"name": "Д-димер", "category": "laboratory", "synonyms": [
+    {"alias": "D-dimer", "lang": "en"}]},
+  {"name": "ПЦР на коронавирус SARS-CoV-2", "category": "laboratory", "synonyms": [
+    {"alias": "ПЦР коронавирус", "lang": "ru"}, {"alias": "ПЦР COVID-19", "lang": "ru"},
+    {"alias": "COVID PCR", "lang": "en"}]},
+  {"name": "Антитела к ВИЧ", "category": "laboratory", "synonyms": [
+    {"alias": "ВИЧ", "lang": "ru"}, {"alias": "Анти-ВИЧ", "lang": "ru"}, {"alias": "HIV test", "lang": "en"}]},
+  {"name": "Антитела к гепатиту В (HBsAg)", "category": "laboratory", "synonyms": [
+    {"alias": "HBsAg", "lang": "en"}, {"alias": "Гепатит В", "lang": "ru"}]},
+  {"name": "Антитела к гепатиту С (anti-HCV)", "category": "laboratory", "synonyms": [
+    {"alias": "anti-HCV", "lang": "en"}, {"alias": "Гепатит С", "lang": "ru"}]},
+  {"name": "ПСА общий", "category": "laboratory", "synonyms": [
+    {"alias": "ПСА", "lang": "ru"}, {"alias": "Простатspecифический антиген", "lang": "ru"},
+    {"alias": "PSA", "lang": "en"}]},
+  {"name": "Тестостерон общий", "category": "laboratory", "synonyms": [
+    {"alias": "Тестостерон", "lang": "ru"}, {"alias": "Testosterone", "lang": "en"}]},
+  {"name": "Пролактин", "category": "laboratory", "synonyms": [
+    {"alias": "Prolactin", "lang": "en"}]},
+  {"name": "Прогестерон", "category": "laboratory", "synonyms": [
+    {"alias": "Progesterone", "lang": "en"}]},
+  {"name": "Эстрадиол", "category": "laboratory", "synonyms": [
+    {"alias": "Estradiol", "lang": "en"}]},
+  {"name": "Кортизол", "category": "laboratory", "synonyms": [
+    {"alias": "Cortisol", "lang": "en"}]},
+  {"name": "Инсулин", "category": "laboratory", "synonyms": [
+    {"alias": "Insulin", "lang": "en"}]},
+  {"name": "Анализ кала на скрытую кровь", "category": "laboratory", "synonyms": [
+    {"alias": "Кал на скрытую кровь", "lang": "ru"}, {"alias": "FOBT", "lang": "en"}]},
+  {"name": "Соскоб на энтеробиоз", "category": "laboratory", "synonyms": [
+    {"alias": "Энтеробиоз", "lang": "ru"}]},
+  {"name": "Мазок на флору (гинекологический)", "category": "laboratory", "synonyms": [
+    {"alias": "Мазок на флору", "lang": "ru"}, {"alias": "Гинекологический мазок", "lang": "ru"}]},
+  {"name": "Группа крови и резус-фактор", "category": "laboratory", "synonyms": [
+    {"alias": "Группа крови", "lang": "ru"}, {"alias": "Резус-фактор", "lang": "ru"},
+    {"alias": "Blood type", "lang": "en"}]},
+
+  {"name": "Приём терапевта", "category": "doctor_visit", "synonyms": [
+    {"alias": "Терапевт", "lang": "ru"}, {"alias": "Консультация терапевта", "lang": "ru"},
+    {"alias": "Врач общей практики", "lang": "ru"}, {"alias": "GP consultation", "lang": "en"}]},
+  {"name": "Приём кардиолога", "category": "doctor_visit", "synonyms": [
+    {"alias": "Кардиолог", "lang": "ru"}, {"alias": "Консультация кардиолога", "lang": "ru"}]},
+  {"name": "Приём невролога", "category": "doctor_visit", "synonyms": [
+    {"alias": "Невролог", "lang": "ru"}, {"alias": "Невропатолог", "lang": "ru"}]},
+  {"name": "Приём эндокринолога", "category": "doctor_visit", "synonyms": [
+    {"alias": "Эндокринолог", "lang": "ru"}]},
+  {"name": "Приём гастроэнтеролога", "category": "doctor_visit", "synonyms": [
+    {"alias": "Гастроэнтеролог", "lang": "ru"}]},
+  {"name": "Приём гинеколога", "category": "doctor_visit", "synonyms": [
+    {"alias": "Гинеколог", "lang": "ru"}, {"alias": "Акушер-гинеколог", "lang": "ru"}]},
+  {"name": "Приём уролога", "category": "doctor_visit", "synonyms": [
+    {"alias": "Уролог", "lang": "ru"}]},
+  {"name": "Приём дерматолога", "category": "doctor_visit", "synonyms": [
+    {"alias": "Дерматолог", "lang": "ru"}, {"alias": "Дерматовенеролог", "lang": "ru"}]},
+  {"name": "Приём оториноларинголога (ЛОР)", "category": "doctor_visit", "synonyms": [
+    {"alias": "ЛОР", "lang": "ru"}, {"alias": "Отоларинголог", "lang": "ru"}]},
+  {"name": "Приём офтальмолога", "category": "doctor_visit", "synonyms": [
+    {"alias": "Офтальмолог", "lang": "ru"}, {"alias": "Окулист", "lang": "ru"}]},
+  {"name": "Приём хирурга", "category": "doctor_visit", "synonyms": [
+    {"alias": "Хирург", "lang": "ru"}]},
+  {"name": "Приём травматолога-ортопеда", "category": "doctor_visit", "synonyms": [
+    {"alias": "Травматолог", "lang": "ru"}, {"alias": "Ортопед", "lang": "ru"}]},
+  {"name": "Приём педиатра", "category": "doctor_visit", "synonyms": [
+    {"alias": "Педиатр", "lang": "ru"}, {"alias": "Детский врач", "lang": "ru"}]},
+  {"name": "Приём психотерапевта", "category": "doctor_visit", "synonyms": [
+    {"alias": "Психотерапевт", "lang": "ru"}, {"alias": "Психиатр", "lang": "ru"}]},
+  {"name": "Приём аллерголога", "category": "doctor_visit", "synonyms": [
+    {"alias": "Аллерголог", "lang": "ru"}, {"alias": "Аллерголог-иммунолог", "lang": "ru"}]},
+  {"name": "Приём пульмонолога", "category": "doctor_visit", "synonyms": [
+    {"alias": "Пульмонолог", "lang": "ru"}]},
+  {"name": "Приём нефролога", "category": "doctor_visit", "synonyms": [
+    {"alias": "Нефролог", "lang": "ru"}]},
+  {"name": "Приём онколога", "category": "doctor_visit", "synonyms": [
+    {"alias": "Онколог", "lang": "ru"}]},
+
+  {"name": "УЗИ органов брюшной полости", "category": "diagnostics", "synonyms": [
+    {"alias": "УЗИ брюшной полости", "lang": "ru"}, {"alias": "УЗИ ОБП", "lang": "ru"},
+    {"alias": "Abdominal ultrasound", "lang": "en"}]},
+  {"name": "УЗИ органов малого таза", "category": "diagnostics", "synonyms": [
+    {"alias": "УЗИ малого таза", "lang": "ru"}, {"alias": "УЗИ ОМТ", "lang": "ru"}]},
+  {"name": "УЗИ щитовидной железы", "category": "diagnostics", "synonyms": [
+    {"alias": "УЗИ щитовидки", "lang": "ru"}]},
+  {"name": "УЗИ молочных желёз", "category": "diagnostics", "synonyms": [
+    {"alias": "УЗИ молочных желез", "lang": "ru"}]},
+  {"name": "УЗИ почек", "category": "diagnostics", "synonyms": [
+    {"alias": "Ультразвук почек", "lang": "ru"}]},
+  {"name": "УЗИ сердца (ЭхоКГ)", "category": "diagnostics", "synonyms": [
+    {"alias": "ЭхоКГ", "lang": "ru"}, {"alias": "Эхокардиография", "lang": "ru"},
+    {"alias": "Echocardiography", "lang": "en"}]},
+  {"name": "Электрокардиография (ЭКГ)", "category": "diagnostics", "synonyms": [
+    {"alias": "ЭКГ", "lang": "ru"}, {"alias": "Кардиограмма", "lang": "ru"}, {"alias": "ECG", "lang": "en"}]},
+  {"name": "Холтеровское мониторирование ЭКГ", "category": "diagnostics", "synonyms": [
+    {"alias": "Холтер", "lang": "ru"}, {"alias": "Суточное мониторирование ЭКГ", "lang": "ru"}]},
+  {"name": "Рентгенография органов грудной клетки", "category": "diagnostics", "synonyms": [
+    {"alias": "Рентген грудной клетки", "lang": "ru"}, {"alias": "Флюорография", "lang": "ru"},
+    {"alias": "Chest X-ray", "lang": "en"}]},
+  {"name": "МРТ головного мозга", "category": "diagnostics", "synonyms": [
+    {"alias": "МРТ мозга", "lang": "ru"}, {"alias": "Brain MRI", "lang": "en"}]},
+  {"name": "МРТ позвоночника (один отдел)", "category": "diagnostics", "synonyms": [
+    {"alias": "МРТ позвоночника", "lang": "ru"}]},
+  {"name": "КТ органов грудной клетки", "category": "diagnostics", "synonyms": [
+    {"alias": "КТ грудной клетки", "lang": "ru"}, {"alias": "Компьютерная томография легких", "lang": "ru"}]},
+  {"name": "КТ головного мозга", "category": "diagnostics", "synonyms": [
+    {"alias": "КТ мозга", "lang": "ru"}]},
+  {"name": "Маммография", "category": "diagnostics", "synonyms": [
+    {"alias": "Mammography", "lang": "en"}]},
+  {"name": "Гастроскопия (ФГДС)", "category": "diagnostics", "synonyms": [
+    {"alias": "ФГДС", "lang": "ru"}, {"alias": "ЭГДС", "lang": "ru"}, {"alias": "Эндоскопия желудка", "lang": "ru"}]},
+  {"name": "Колоноскопия", "category": "diagnostics", "synonyms": [
+    {"alias": "Colonoscopy", "lang": "en"}]},
+
+  {"name": "Внутримышечная инъекция", "category": "procedure", "synonyms": [
+    {"alias": "Укол внутримышечно", "lang": "ru"}, {"alias": "В/м инъекция", "lang": "ru"}]},
+  {"name": "Внутривенная инъекция", "category": "procedure", "synonyms": [
+    {"alias": "В/в инъекция", "lang": "ru"}, {"alias": "Укол внутривенно", "lang": "ru"}]},
+  {"name": "Внутривенное капельное вливание", "category": "procedure", "synonyms": [
+    {"alias": "Капельница", "lang": "ru"}, {"alias": "Инфузия", "lang": "ru"}]},
+  {"name": "Забор крови из вены", "category": "procedure", "synonyms": [
+    {"alias": "Взятие крови из вены", "lang": "ru"}, {"alias": "Венепункция", "lang": "ru"}]},
+  {"name": "Физиотерапия (один сеанс)", "category": "procedure", "synonyms": [
+    {"alias": "Физиолечение", "lang": "ru"}, {"alias": "Физиопроцедура", "lang": "ru"}]},
+  {"name": "Массаж (один сеанс)", "category": "procedure", "synonyms": [
+    {"alias": "Лечебный массаж", "lang": "ru"}, {"alias": "Massage", "lang": "en"}]},
+  {"name": "Перевязка", "category": "procedure", "synonyms": [
+    {"alias": "Перевязка раны", "lang": "ru"}]},
+  {"name": "Вакцинация (без стоимости вакцины)", "category": "procedure", "synonyms": [
+    {"alias": "Прививка", "lang": "ru"}, {"alias": "Вакцинация", "lang": "ru"}]}
+]

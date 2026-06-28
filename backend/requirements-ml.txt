@@ -1,0 +1,9 @@
+# Optional ML extras for semantic (embeddings-based) normalization & search.
+# Install on top of requirements.txt to enable pgvector semantic matching:
+#   pip install -r requirements.txt -r requirements-ml.txt
+# Without these, the matcher uses exact + fuzzy stages and search falls back
+# to Meilisearch / Postgres trigram (see app/services/embeddings.py).
+#
+# Tip: for CPU-only deployments install the CPU torch wheel to avoid CUDA:
+#   pip install torch --index-url https://download.pytorch.org/whl/cpu
+sentence-transformers==3.3.1

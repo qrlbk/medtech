@@ -1,0 +1,51 @@
+{
+  "annotations": { "list": [] },
+  "editable": true,
+  "panels": [
+    {
+      "type": "stat",
+      "title": "Доля свежих цен (<30 дней)",
+      "gridPos": { "h": 6, "w": 6, "x": 0, "y": 0 },
+      "fieldConfig": { "defaults": { "unit": "percentunit", "min": 0, "max": 1 } },
+      "targets": [{ "expr": "medprice_fresh_prices_ratio", "refId": "A" }]
+    },
+    {
+      "type": "stat",
+      "title": "Непривязанные услуги (очередь)",
+      "gridPos": { "h": 6, "w": 6, "x": 6, "y": 0 },
+      "targets": [{ "expr": "medprice_unmatched_total", "refId": "A" }]
+    },
+    {
+      "type": "timeseries",
+      "title": "Запуски парсеров (по статусу)",
+      "gridPos": { "h": 8, "w": 12, "x": 12, "y": 0 },
+      "targets": [
+        { "expr": "sum by (source,status) (medprice_parser_runs_total)", "refId": "A" }
+      ]
+    },
+    {
+      "type": "timeseries",
+      "title": "HTTP запросы/сек",
+      "gridPos": { "h": 8, "w": 12, "x": 0, "y": 6 },
+      "targets": [
+        { "expr": "sum by (path) (rate(medprice_http_requests_total[1m]))", "refId": "A" }
+      ]
+    },
+    {
+      "type": "timeseries",
+      "title": "Латентность поиска p95 (сек)",
+      "gridPos": { "h": 8, "w": 12, "x": 12, "y": 8 },
+      "targets": [
+        {
+          "expr": "histogram_quantile(0.95, sum by (le,path) (rate(medprice_http_request_seconds_bucket[5m])))",
+          "refId": "A"
+        }
+      ]
+    }
+  ],
+  "schemaVersion": 39,
+  "tags": ["medprice"],
+  "title": "MedServicePrice — обзор",
+  "time": { "from": "now-6h", "to": "now" },
+  "version": 1
+}
