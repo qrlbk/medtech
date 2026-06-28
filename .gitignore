@@ -30,3 +30,7 @@ data/raw/
 # IDE
 .idea/
 .vscode/
+
+# Local docs/notes
+Справочник услуг.xlsx
+тз
